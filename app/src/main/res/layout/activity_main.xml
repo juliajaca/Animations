@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:gravity="center"
     android:layout_height="match_parent"
     android:layout_width="match_parent">
@@ -12,11 +13,23 @@
       android:layout_height="wrap_content"
       android:text="Hello World!" /> -->
 
-    <ImageView
-         android:id="@+id/imagen_circulo"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content">
-    </ImageView>
+    <LinearLayout
+        android:layout_height="400dp"
+        android:layout_width="match_parent"
+        android:id="@+id/cielo"
+        android:background="@color/color1"
+        android:gravity="center"
+        android:onClick="animacion2">
+
+        <ImageView
+            android:id="@+id/imagen_circulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/circulo" />
+
+    </LinearLayout>
+
+
     <!--
     <Button
       android:layout_width="wrap_content"
@@ -25,4 +38,12 @@
       android:onClick="animacion">
 
     </Button>-->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/mar">
+
+    </ImageView>
 </LinearLayout>
